@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entity - Your Personal Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- App Header -->
+        <header>
+            <h1>Entity</h1>
+            <p>Your personal companion for mood tracking, habits, and goals.</p>
+        </header>
+
+        <!-- Mood Tracker Section -->
+        <section id="mood-tracker" class="card">
+            <h2>How are you feeling today?</h2>
+            <div class="mood-buttons">
+                <button id="happy-btn" class="mood-btn">😊 Happy</button>
+                <button id="neutral-btn" class="mood-btn">😐 Neutral</button>
+                <button id="sad-btn" class="mood-btn">😢 Sad</button>
+            </div>
+            <p id="mood-response" class="response"></p>
+        </section>
+
+        <!-- AI Assistant Section -->
+        <section id="ai-assistant" class="card">
+            <h2>Entity Assistant</h2>
+            <div id="chat-box">
+                <div id="chat-messages"></div>
+                <input type="text" id="chat-input" placeholder="Ask Entity for advice...">
+                <button id="send-btn">Send</button>
+            </div>
+        </section>
+
+        <!-- Habit Tracker Section -->
+        <section id="habit-tracker" class="card">
+            <h2>Habit Tracker</h2>
+            <input type="text" id="habit-input" placeholder="Enter a new habit">
+            <button id="add-habit-btn">Add Habit</button>
+            <ul id="habit-list"></ul>
+        </section>
+
+        <!-- Goal Setting Section -->
+        <section id="goal-setting" class="card">
+            <h2>Set Your Goals</h2>
+            <input type="text" id="goal-input" placeholder="Enter a goal">
+            <button id="add-goal-btn">Add Goal</button>
+            <ul id="goal-list"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
